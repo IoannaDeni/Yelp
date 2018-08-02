@@ -18,18 +18,22 @@ class BusinessesViewController: UIViewController, UITableViewDelegate, UITableVi
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 120
+        
+        let searchBar = UISearchBar()
+        //let searchController = UISearchController.self
+        navigationItem.titleView = searchBar
+        searchBar.sizeToFit()
+        
+        searchDisplayController?.displaysSearchBarInNavigationBar = true
+        tableView.keyboardDismissMode = .onDrag
+        
         
         Business.searchWithTerm(term: "Thai", completion: { (businesses: [Business]?, error: Error?) -> Void in
             
                 self.businesses = businesses
             self.tableView.reloadData()
-                if let businesses = businesses {
-                    for business in businesses {
-                        print(business.name!)
-                        print(business.address!)
-                    }
-                }
-            
             })
     }
     
