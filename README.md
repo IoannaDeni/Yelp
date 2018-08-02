@@ -20,13 +20,12 @@ The following **stretch** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- List anything else that you can get done to improve the app functionality!
 - [x] Keyboard disappears with tap on the screen
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. Did we had to say let for the search bar declaration?
 
 ## Video Walkthrough
 
@@ -38,7 +37,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Declaring new objects such like the search bar in the navigation controller was a new thing.
 
 ## License
 
